@@ -4,26 +4,27 @@
 }
 body {
   font-family: "Gabarito", sans-serif;
+  min-width: 400px;
 }
 .navbar {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid gray;
   gap: 10px;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  
+  align-items: center;  
 }
+
 .navbar__s1__title {
   color: #a435f0;
 }
+
 .navbar__s2 {
   padding: 10px;
   border: solid black 1px;
   border-radius: 30px;
-  width: 60%;
+  width: 50%;
   display: flex;
   gap: 10px;
 }
