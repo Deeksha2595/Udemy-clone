@@ -12,7 +12,6 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" type="image" href="https://freelogopng.com/images/all_img/1683006968udemy-icon-png.png" />
-
     <title>Udemy</title>
 </head>
 
@@ -35,16 +34,23 @@
             <i class="fa-regular fa-user"></i>
         </div>
     </div>
+    
+    <!-- Side Button -->
+    <div class="side-button" id="toggleBtn">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
     <!-- Categories Bar -->
-    <div class="categories">
-        <p>Devlopment</p>
-        <p>Bussiness</p>
+    <div class="categories" id="categories">
+        <p>Development</p>
+        <p>Business</p>
         <p>IT & Software</p>
         <p>Personal Development</p>
         <p>Design</p>
         <p>Marketing</p>
         <p>Fashion</p>
     </div>
+
     <!-- Advertisement -->
     <div class="sale-image">
         <img src="./saleimage.jpg" alt="sale-image" width="100%">
@@ -231,7 +237,6 @@
             <h3>Top companies choose Udemy Business to build in-demand career skills.</h3>
             <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="nasdaq">
             <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" alt="volkswagen">
-            <img src="https://s.udemycdn.com/partner-logos/v4/box-light.svg" alt="box">
             <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="netapp">
             <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="eventbrite">
         </div>
@@ -266,6 +271,15 @@
             <p>&copy; Udemy, Inc.</p>
         </div>
     </div>
+    <script>
+        const toggleBtn = document.getElementById('toggleBtn');
+        const categories = document.getElementById('categories');
+
+        toggleBtn.addEventListener('click', () => {
+            categories.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
 </html>

@@ -2,10 +2,45 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Gabarito", sans-serif;
-  min-width: 400px;
+  min-width: 350px;
 }
+
+.categories {
+    position: fixed;      
+    top: 60px;            
+    left: -220px;         
+    width: 200px;
+    background: #f2f2f2;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.categories.active {
+    left: 0;
+}
+
+/* Side toggle button */
+.side-button {
+    position: fixed;
+    top: 120px;      
+    left: 0;
+    background: #0073e6;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.side-button i {
+    font-size: 18px;
+}
+
 .navbar {
   padding: 10px;
   display: flex;
